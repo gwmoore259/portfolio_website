@@ -1,0 +1,212 @@
+html{box-sizing: border-box;}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(210,211,212);
+    height: 60px;
+    box-shadow: 0 5px 5px rgba(0,0,0,.1);
+    z-index: 10;
+    width: 100%;
+    transition: all 0.1s;
+}
+
+.logo{
+    display: inline-block;
+    height: 70px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.nav, .nav-pills {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 700px;
+/*    color: #2E3192;*/
+}
+
+.navbar-toggle, collapsed{
+    margin-top: 20px;
+    background-color: rgba(46,49,146,0.3);
+}
+
+.icon-bar{
+    color: #2E3192;
+    z-index: 3;
+}
+
+.dropdown-menu{
+    text-align: center;
+}
+
+
+.mystory, .myservices, .mywork, .testimonials, .contact{
+    text-align: center;
+    margin: 0, auto;
+    padding-top: 30px;
+    padding-bottom: 150px;
+    
+}
+
+.mystory h2, .myservices h2, .mywork h2, .testimonials h2, .contact h2{
+    color: #2E3192;
+}
+
+
+.homepage em, .mystory em, .myservices em, .mywork em, .contact em{
+    color: #00A651;
+    font-style: normal;
+}
+
+
+.homepage{
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: rgba(0,166,81, 0.3);
+    font-family: "Verdana Bold", sans-serif;
+    font-weight: 700;
+    color: #2E3192;
+}
+
+.growth{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    vertical-align: middle;
+}
+
+.mystory p{
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #2E3192;
+    font-size: 16px;
+}
+
+
+.thumbnail{
+    position: relative; 
+}
+
+.infobox, .infobox2{
+    position: absolute;
+    background-color: rgba(46,49,146, 0.8);
+    padding: 27px;
+    color: white;
+    z-index: 5;
+    top: -2px;
+/*    width: 86%;*/
+/*
+    webkit-transition: all 1500ms;
+    transition: all 1500ms;
+    transition-property: all;
+    transition-duration: 1500ms;
+    transition-timing-function: initial;
+    transition-delay: initial;
+*/
+/*    opacity: 0;*/
+}
+
+
+.infobox h5, .infobox3 h5{
+    color: #00A651;
+}
+
+.infobox2{
+    background-color: rgba(0,166,81,0.8);
+}
+
+.infobox2 h5, .infobox4 h5{
+    color: #2E3192;
+}
+
+.infobox3{
+    position: absolute;
+    background-color: rgba(46,49,146, 0.8);
+    padding: 37px;
+    color: white;
+    z-index: 5;
+    margin-top: -230px;
+}
+
+.infobox4{
+    position: absolute;
+    background-color: rgba(0,166,81,0.8);
+    padding: 37px;
+    color: white;
+    z-index: 5;
+    margin-top: -230px;
+}
+
+
+
+
+.logodesign, .photography, .webdesign, .copywriting{
+    margin-top: 50px;
+}
+
+.mywork h3{
+    color: #00A651;
+}
+
+.myservices img{
+    display: inline-block;
+    
+}
+
+.img-thumbnail{
+    margin-top: 50px;
+}
+
+/*
+.logodesign img{
+    display: inline-block;
+    margin-left: 50px
+}
+*/
+
+/*
+.active{
+    background-color: #00A651;
+}
+*/
+
+.testimonials{
+    background-color: rgba(35,31,32,0.3);
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.testimonials p{
+/*    max-width: 700px;*/
+    margin-top: 30px;
+/*    margin-left: 315px;*/
+    
+}
+
+.testimonials h4{
+    color: #00A651;
+}
+
+.contact{
+    background-color: rgba(46,49,146,0.3);
+}
+
+.contact h4{
+    color: #2E3192; 
+}
+
+.socialbar{
+    min-height: 200px;
+    text-align: center;
+    z-index: 10;
+}
+
