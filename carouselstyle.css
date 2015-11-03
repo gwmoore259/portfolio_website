@@ -3,15 +3,7 @@ html{box-sizing: border-box;}
   box-sizing: inherit;
 }
 
-header {
-    position: fixed;
-    background-color: rgb(210,211,212);
-    height: 60px;
-    box-shadow: 0 5px 5px rgba(0,0,0,.1);
-    z-index: 10;
-    width: 100%;
-    transition: all 0.1s;
-}
+
 
 .logo{
     display: inline-block;
@@ -21,11 +13,15 @@ header {
 }
 
 .nav, .nav-pills {
+    margin-top: 10px;
+    text-align: center;
+/*
     display: inline-block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     padding-left: 700px;
+*/
 /*    color: #2E3192;*/
 }
 
@@ -44,20 +40,20 @@ header {
 }
 
 
-.mystory, .myservices, .mywork, .testimonials, .contact{
+.mystory, .myservices, .skillset, .mywork, .testimonials, .contact{
     text-align: center;
     margin: 0, auto;
     padding-top: 30px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     
 }
 
-.mystory h2, .myservices h2, .mywork h2, .testimonials h2, .contact h2{
+.mystory h2, .myservices h2, .skillset h2, .mywork h2, .testimonials h2, .contact h2{
     color: #2E3192;
 }
 
 
-.homepage em, .mystory em, .myservices em, .mywork em, .contact em{
+.homepage em, .mystory em, .myservices em, .skillset em, .mywork em, .contact em{
     color: #00A651;
     font-style: normal;
 }
@@ -65,18 +61,27 @@ header {
 
 .homepage{
     text-align: center;
-    padding-top: 200px;
+    margin-top: 70px;
     padding-bottom: 200px;
-    background-color: rgba(0,166,81, 0.3);
-    font-family: "Verdana Bold", sans-serif;
-    font-weight: 700;
-    color: #2E3192;
+    background: url(images/mountains.jpg) no-repeat;
+    
+    
 }
 
+
+
+
 .growth{
-    position: relative;
-    margin-top: 50px;
-    margin-bottom: -50px;
+/*    position: relative;*/
+    margin-top: 30px;
+    margin-bottom: -40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.growth img{
+    display: inline-block;
+    margin-right: 10px;
     vertical-align: middle;
 }
 
@@ -84,75 +89,95 @@ header {
     display: inline-block;
     text-align: left;
     max-width: 500px;
-    padding-left: 30px;
-    padding-right: 30px;
+    vertical-align: middle;
     color: #2E3192;
-    font-size: 16px;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+.carousel-inner, .item img, .item active img{
+    width: 100%;
+}
+
+.carousel-caption, .carousel-indicators{
+    position: absolute;
+    top: -26px;
+    color: #00A651;
+    font-size: 21px;
+    text-shadow: none;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    color: #00A651;
+}
+
 
 
 .thumbnail{
     position: relative; 
 }
 
-.infobox, .infobox2{
-    position: absolute;
-    background-color: rgba(46,49,146, 0.8);
-    padding: 27px;
-    color: white;
-    z-index: 5;
-    top: -2px;
-/*    width: 86%;*/
+.modal-body .hero{
+    width: 100%;
+}
+
+.skillset{
+    background-color: rgba(35,31,32,0.2);
+    margin: 0 auto;
+}
+
+.skillicons > div {
+    display: inline-block;
+	background-image: url("images/skillicons.png");
+	height: 148px;
+	width: 121px;
+	margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
 /*
-    webkit-transition: all 1500ms;
-    transition: all 1500ms;
-    transition-property: all;
-    transition-duration: 1500ms;
-    transition-timing-function: initial;
-    transition-delay: initial;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
 */
-/*    opacity: 0;*/
+}
+.skillicons > div:hover {
+    background-position-y: -157px;
 }
 
-
-.infobox h5, .infobox3 h5{
-    color: #00A651;
+.skillicons > div:nth-child(2){
+    background-position-x: -126px; 
 }
 
-.infobox2{
-    background-color: rgba(0,166,81,0.8);
+.skillicons > div:nth-child(3){
+    background-position-x: -242px; 
 }
 
-.infobox2 h5, .infobox4 h5{
-    color: #2E3192;
+.skillicons > div:nth-child(4){
+    background-position-x: -360px; 
 }
 
-.infobox3{
-    position: absolute;
-    background-color: rgba(46,49,146, 0.8);
-    padding: 37px;
-    color: white;
-    z-index: 5;
-    margin-top: -230px;
+.skillicons > div:nth-child(5){
+    background-position-x: -480px; 
 }
 
-.infobox4{
-    position: absolute;
-    background-color: rgba(0,166,81,0.8);
-    padding: 37px;
-    color: white;
-    z-index: 5;
-    margin-top: -230px;
+.skillicons > div:nth-child(6){
+    background-position-x: -610px; 
 }
-
-
 
 
 .logodesign, .photography, .webdesign, .copywriting{
     margin-top: 50px;
 }
 
-.mywork h3{
+.mywork h3, .skillset h3{
     color: #00A651;
 }
 
@@ -165,29 +190,45 @@ header {
     margin-top: 50px;
 }
 
-/*
-.logodesign img{
-    display: inline-block;
-    margin-left: 50px
+.write{
+    padding-right: 0;
 }
-*/
 
-/*
-.active{
-    background-color: #00A651;
+.copywriting img, .copywriting p{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
 }
-*/
+
+.copywriting p{
+    font-size: 18px;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: #00A651;
+    text-align: left;
+    padding-top: 55px;
+}
+
+.copywriting em{
+    font-style: italic;
+}
+
+
+
+
 
 .testimonials{
-    background-color: rgba(35,31,32,0.3);
-    color: white;
+    background-color: rgba(35,31,32,0.2);
+    color: #2E3192;
     padding-left: 50px;
     padding-right: 50px;
 }
 
 .testimonials p{
-/*    max-width: 700px;*/
+    margin: 0 auto;
+    max-width: 900px;
     margin-top: 30px;
+    font-size: 18px;
 /*    margin-left: 315px;*/
     
 }
@@ -197,16 +238,150 @@ header {
 }
 
 .contact{
-    background-color: rgba(46,49,146,0.3);
+    padding-bottom: 0;
 }
 
 .contact h4{
-    color: #2E3192; 
+    color: #2E3192;
+    font-size: 20px;
 }
 
-.socialbar{
-    min-height: 200px;
-    text-align: center;
-    z-index: 10;
+.infographic h4{
+    margin-top: 0;
+    color: #2E3192;
 }
 
+.socialbar, .infographic{
+    display: inline-block;
+}
+
+.facebook, .twitter, .linkedin, .drawing, .pictures, .writing{
+    background-image: url(images/facebook60.png);
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    webkit-transition: all ease 0.3s;
+    moz-transition: all ease 0.3s;
+    o-transition: all ease 0.3s;
+    ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.facebook:hover, .twitter:hover, .linkedin:hover, .drawing:hover, .pictures:hover, .writing:hover{
+    background-image: url(images/facebook60color.png);
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+    webkit-transform:rotate(360deg);
+    moz-transform:rotate(360deg);
+    o-transform:rotate(360deg);
+    ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+
+.twitter{
+    background-image: url(images/twitter60.png);
+}
+
+.twitter:hover{
+    background-image: url(images/twitter60color.png);
+}
+
+.linkedin{
+    background-image: url(images/linkedin60.png);
+}
+
+.linkedin:hover{
+    background-image: url(images/linkedin60color.png);
+}
+
+.drawing{
+    background-image: url(images/drawingbw.png);
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+.drawing:hover{
+    background-image: url(images/drawingcolor.png);
+}
+
+.pictures{
+    background-image: url(images/photobw.png);
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+.pictures:hover{
+    background-image: url(images/photocolor.png);
+}
+
+.writing{
+    background-image: url(images/copywritebw.png);
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+.writing:hover{
+    background-image: url(images/copywritecolor.png);
+}
+
+
+
+@media screen and (min-width: 200px) {
+    .homepage{
+        background-image: url(images/mountainsmobile.jpg);    }
+
+@media screen and (min-width: 1000px) {
+    .homepage{
+        background-image: url(images/mountains.jpg);
+    }
+    
+    .nametag{
+        width: 500px;
+        height: 350px;
+        margin-left: 110px;
+        padding-top: 60px;
+    }
+    
+    .nametag h2{
+        font-size: 40px;
+    }
+    
+    .nametag h1{
+        font-size: 56px;
+    }
+    
+    .nametag h3{
+        font-size: 30px;
+    }
+
+    .homepage{
+        height: 500px
+    }
+    
+    .carousel-inner, .item img, .item active img{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .copywriting p{
+        margin-right: 150px;
+        margin-left: 0;
+    }
+    
+
+    .skillset img{
+        width: 730px;
+        height: 185px:
+    }
+
+
+    .slider{
+        margin-top: -30px;
+    }
